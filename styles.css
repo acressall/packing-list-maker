@@ -1,0 +1,133 @@
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 21px;
+	color: #3b3e41;
+}
+a {
+	color:#000;
+	transition: all ease 0.5s;
+}
+a:hover {
+	color:#3d4400;
+}
+.hero-wrapper {
+	width:100%;
+}
+img {
+	width: 100%;
+}
+section {
+	width: 75%;
+	max-width: 996px;
+	margin: 14px auto;
+}
+#lists {
+	margin-bottom: 50px;
+}
+#intro {
+	text-align: center;
+}
+
+h1 {
+	font-size: 41px;
+	font-weight: 900;
+}
+h4 {
+	margin-bottom: 0;
+}
+
+#form {
+	background-color: #f3f3f3;
+	padding: 28px;
+	border-radius: 4px;
+}
+input, select {
+	height:30px;
+	margin-bottom: 14px;
+	border: none;
+	border-bottom: 2px dotted #3d4400;
+	background-color: transparent;
+	font-family: 'Merriweather', serif;
+	font-size: 21px;
+	color: #3d4400;
+	transition: all ease 0.5s;
+}
+input[type='text']{
+	width: 170px;
+}
+input::placeholder{
+	color: #3d4400;
+}
+input:focus {
+	outline: none;
+	border-bottom: 2px solid #282d01;
+}
+button {
+	display:block;
+	margin-bottom: 7px;
+	padding: 14px;
+	border: none;
+	border-radius: 4px;
+	font-family: 'Merriweather', serif;
+	font-size: 21px;
+	background-color: #000;
+	color: #fff;
+	transition: all ease 0.5s;
+}
+button:hover {
+	background-color: #3d4400 !important;
+}
+
+ul {
+	display: none;
+}
+li {
+	list-style-type: none;
+	padding: 7px 0;
+}
+i {
+	font-size: 27px !important;
+	transition: all ease 0.5s;
+}
+.checked {
+	color: #ccc;
+	text-decoration: line-through;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3d4400; /* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#modal-wrapper {
+	position: absolute;
+	width:100%;
+	max-width: none;
+	height:150%;
+	top:0;
+	left:0;
+	background-color: rgba(0,0,0,0.5);
+	margin:0;
+	display: none;
+}
+.modal {
+	width: 600px;
+	margin: 50px auto;
+	padding: 25px;
+	background-color:#fff;
+}
+.close {
+	position: absolute;
+	top:25px;
+	right:25px;
+}

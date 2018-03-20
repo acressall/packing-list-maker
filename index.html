@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Packing List-Maker</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+
+</head>
+<body>
+	<div class="hero-wrapper">
+		<img src="images/hero.jpg">
+	</div>
+	<section id="intro">
+		<h1>Packing List-Maker</h1>
+		<p>Enter the details about your trip to generate your packing list.</p>
+	</section>
+
+	<section id="form">
+		<form id="location">
+			<label>I am travelling to </label><input id="province" type="text" placeholder="province/state" />
+			<label> and visiting </label><input id="city" type="text" placeholder="city">
+		</form>
+		<form id="dates">
+			<label>I will be there from </label>
+			<input id="start-date" type="date" />
+			<label> until </label>
+			<input id="end-date" type="date" />
+		</form>
+		<form>
+			<label>I am</label>
+			<select id="occupation" placeholder="occupation">
+				<option selected disabled>occupation</option>
+				<option value="developer">a developer</option>
+				<option value="designer">a designer</option>
+				<option value="musician">a musician</option>
+				<option value="photographer">a photographer</option>
+				<option value="student">a student</option>
+			</select>
+		</form>
+		<form>
+			<label>When I am there I will</label>
+			<select id="activity">
+				<option selected disabled>activity</option>
+				<option value="camp">camp</option>
+				<option value="hike">hike</option>
+				<option value="shop">shop</option>
+				<option value="sight-see">sight-see</option>
+				<option value="swim">swim</option>
+				<option value="visit">visit family</option>
+			</select>
+		</form>
+	</section>
+	<section>
+		<button id="submit-preferences" type="submit">Make my List</button>
+	</section>
+
+	<div class="loader"></div>
+
+	<section id="lists">
+		<ul id="default-list"></ul>
+		<ul id="weather-list">
+		</ul>
+		<ul id="occupation-list">
+		</ul>
+		<ul id="activity-list">
+		</ul>
+	</section>
+
+	<section id="modal-wrapper">
+		<div class="modal">
+			<h4>Add an Item</h4>
+			<i class="fa fa-times close" aria-hidden="true"></i>
+			<form>
+				<label>Select a category for your item</label>
+				<select id="add-to-category">
+					<option selected disabled>choose one</option>
+					<option value="default">essentials</option>
+					<option value="weather">weather</option>
+					<option value="occupation">occupation</option>
+					<option value="activity">activity</option>
+				</select>
+				<div>
+					<label>Add your item </label><input id="new-item" type="text" />
+				</div>
+				<button type="submit" class="add-item">Add Item</button>
+			</form>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="dateFormat.js"></script>
+	<script type="text/javascript" src="jquery.dateFormat.js"></script>
+	<script src="https://use.fontawesome.com/387a8651a0.js"></script>
+
+
+</body>
+</html>
